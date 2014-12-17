@@ -1,0 +1,135 @@
+<html>
+
+<head>
+	<title> Tejas Assignment - Username & Password verification </title>
+<script language="JavaScript">
+var err=false;
+function disperr(itm,msg)
+{
+	if(err)
+	   return;
+
+	alert(msg)
+	itm.focus()
+	itm.value=""
+	err=true;
+}
+
+function minlen(itm)
+{
+ 	var len
+	len=itm.value.length;
+	if(len<6)
+	   return false;
+
+        return true;
+}
+
+function maxlen(itm)
+{
+        var len
+        len=itm.value.length;
+        if(len>15)
+	   return false;
+
+        return true;
+}
+
+function digit(itm)
+{
+      var len,i,found,ch;
+      len=itm.value.length;
+      found=false;
+      for(i=0;i<len;i++)
+      {
+         ch=itm.value.charAt(i);
+	 if(ch>='0' && ch<='9')
+	 {
+		found=true;
+		break;
+	 }
+      }
+      if(!found)
+         return false;
+      
+      return true;
+}
+
+function character(itm)
+{
+      var len,i,ch;
+      len=itm.value.length
+      for(i=0;i<len;i++)
+      {
+         ch=itm.value.charAt(i);
+         if(!((ch>='a' && ch<='z')||(ch>='A' && ch<='Z')||(ch>='0' && ch<='9')||(ch !=" " )))
+         {
+            return false;
+         }
+         else
+         {
+            return true;
+         }
+}
+}
+
+function chk()
+{
+      err=false;
+      if(!minlen(document.form1.uname))
+         disperr(document.form1.uname,"invalid username min 6 char are required")
+
+      if(!maxlen(document.form1.uname))
+         disperr(document.form1.uname,"invalid username max 15 char are allowed") 
+
+      if(!character(document.form1.uname))
+         disperr(document.form1.uname,"invalid username only character and numbers allowed")
+
+      if(!character(document.form1.pass))
+         disperr(document.form1.uname,"invalid password only character and numbers allowed")
+
+      if(!minlen(document.form1.pass))
+         disperr(document.form1.pass,"invalid password min 6 char are required")
+
+
+      if(!maxlen(document.form1.pass))
+         disperr(document.form1.pass,"invalid password max 15 char are allowed")
+
+
+      if(!digit(document.form1.pass))
+         disperr(document.form1.pass,"invalid password at least one digit & no space is required in password")
+
+      if(!err)
+         alert("valid data accepted");
+}
+</script>
+</head>
+
+<body align="center" bgcolor="#FFDABE">
+	<form name="form1">
+	<br/>
+	<table width="640">
+		<tr>
+			<td align="center" colspan="3">
+				
+				Welcome to Member's area</h2>
+			</td>
+		</tr>
+		<tr>
+			<td align="right" width="45%">Username</td>
+			<td align="center">:</td>
+			<td align="left" width="45%"><input type="text" name="uname" /></td>
+		</tr>
+		<tr>
+			<td align="right" width="45%">Password</td>
+			<td align="center">:</td>
+			<td align="left" width="45%"><input type="password" name="pass" /></td>
+		</tr>
+		<tr>
+			<td colspan="3" align="center"><br/><input type="button" name="sbmt" value="Submit" onclick="javascript:chk();" /></td>
+		</tr>
+	</table>
+	</form>
+</body>
+
+</html>

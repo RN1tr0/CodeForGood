@@ -1,0 +1,163 @@
+.nav a{
+  color: #000000;
+  font-size: 11px;
+  font-weight: bold; 
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  padding-right: 10px;
+  padding-left: 10px;
+  text-transform: uppercase;
+
+}
+
+.jumbotron {
+  background-image:url('http://timedotcom.files.wordpress.com/2014/07/roa140720810.jpg?w=1100');
+  height:500px;
+  width:1200px;
+ margin-left: 75px;
+
+}
+
+
+.container h2 
+{
+  color:#000000;
+  text-align: center;
+}
+
+.container p{
+  color:#000000;
+  text-align: center;
+}
+
+#header {
+    background-image: url(images/header.png);
+    background-repeat: no-repeat;
+    height: 42px;
+    width: 490px;
+    margin-bottom: 20px;
+}
+
+#button {
+    height: 32px;
+    width: 184px;
+    margin: auto;
+}
+
+ul, li {
+    margin:0; 
+    padding:0; 
+    list-style:none;
+}
+
+.menu_class {
+    border:1px solid #1c1c1c;
+}
+
+.file_menu {
+    display:none;
+    width:300px;
+    border: 1px solid #1c1c1c;
+}
+
+.file_menu li {
+    background-color: #302f2f;
+}
+
+.file_menu li a {
+    color:#000000; 
+    text-decoration:none; 
+    padding:10px; 
+    display:block;
+}
+
+.file_menu li a:hover {
+    padding:10px;
+    font-weight:bold;
+    color: #F00880;
+}
+
+.jumbotron h1 {
+
+  color: #000000;
+
+  font-size: 48px;
+  font-weight: bold;
+
+  font-family:'Shift', sansserif;
+}
+
+.jumbotron p {
+
+  font-size: 20px;
+
+  color: #fff;
+
+}
+
+.learn-more {
+  
+background-color: #f7f7f7;
+
+}
+
+.learn-more h3 {
+
+  font-family: 'Shift', sans-serif;
+
+  font-size: 18px;
+
+  font-weight: bold;
+  font-color:#000000;
+
+}
+
+.learn-more a {
+
+  color: #00b0ff;
+
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron .container{
+
+    position:relative;
+
+    top:100px;
+
+    padding-left:20px;
+}
+
+.neighborhood-guides {
+  background-color:#efefef
+  border-bottom:1px solid #dbdbdb
+}
+
+.neighborhood-guides h2 {
+  color:#393c3d;
+  font-size:24px;
+}
+
+.neighborhood-guides p {
+  font-size:15px;
+  margin-bottom:13px;
+} 
+
+/* .whole {
+  
+  background-image:url('http://www.freebiesgallery.com/wp-content/uploads/2012/08/dark-website-backgrounds-10.jpg');
+}
+
+*/
+
+.whole > .LearnMore h3 {
+  color:#000000;
+}
+
+table, th, td {
+   color:#000000;
+}
